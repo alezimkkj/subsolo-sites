@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Métodos de pagamento – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref desk-acc desk-pay fv-d">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <div class="acc-wrap">
+      <div data-include="accnav" data-active="pay"></div>
+      <div class="acc-main">
+        <div class="acc-card">
+          <header class="pagehead"><a class="back" href="perfil.html" data-icon="back"></a>
+            <div>
+              <h1>Métodos de pagamento</h1>
+              <p>Gerencie suas formas de pagamento.</p>
+            </div>
+          </header>
+          <section class="page" style="border-top:1px solid var(--line);padding-top:24px">
+            <p class="label" style="color:var(--text);font-size:14px;margin-bottom:16px">Cartões salvos</p>
+            <div class="pcard">
+              <div style="display:flex;justify-content:space-between"><span class="label" style="color:#aaa">Cartão
+                  principal</span><span data-icon="cart"></span></div>
+              <p class="num"><img class="gl" src="img/ic-visa.png" alt="Visa" style="height:26px;vertical-align:middle">
+                •••• 1234</p>
+              <div class="meta"><span>Titular<b>ALESSANDRO</b></span><span
+                  style="text-align:right">Validade<b>08/29</b></span></div>
+            </div>
+            <div class="pcard light" style="background:var(--chip)">
+              <p class="num" style="margin-top:0"><img class="gl" src="img/ic-mastercard.png" alt="Mastercard"
+                  style="height:26px;vertical-align:middle"> •••• 8890</p>
+              <div class="meta"><span>Titular<b>ALESSANDRO</b></span><span
+                  style="text-align:right">Validade<b>11/27</b></span></div>
+            </div>
+            <a class="dashed" href="#"><span data-icon="plus"></span>Adicionar cartão</a>
+            <p class="label" style="color:var(--text);font-size:14px;margin-bottom:16px">Outros métodos</p>
+            <a class="row" href="#"><span class="ic"><img class="gl" src="img/ic-pix.png" alt="Pix"
+                  style="height:22px"></span><span class="grow">Pix<small>Disponível na finalização do
+                  pedido.</small></span><span data-icon="right"></span></a>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
