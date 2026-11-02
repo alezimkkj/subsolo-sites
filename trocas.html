@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitar troca ou devolução – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref desk-hlp fv-b desk-form">
+    <div data-include="topbar" data-desk-only data-ann data-nav="ajuda"></div>
+    <header class="pagehead mx" style="padding-bottom:12px"><a class="back" href="perfil.html" data-icon="back"></a>
+      <h1>Solicitar troca ou devolução</h1>
+    </header>
+    <form class="page" data-next="detalhes-solicitacao.html">
+      <div class="fm-head">
+        <h1>Solicitar troca ou devolução</h1>
+        <p>Preencha os dados abaixo para iniciar o processo de solicitação.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between" class="label"><span class="dx fm-sec">Detalhes do
+            pedido</span><b style="color:var(--text)">Pedido #12345</b><span
+            style="text-transform:none;letter-spacing:0">12/10/2023</span></div>
+        <div class="order-item" style="border:0;padding-bottom:0">
+          <div class="thumb"><img src="img/calca-shadow-black.jpg" alt="" loading="lazy"></div>
+          <div><span class="label" style="font-size:10px">PACE</span><br><b>Calça Shadow Cargo Tech</b><br><span
+              class="tagchip">Tam: M</span><span class="tagchip">Cor: Black</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="fm-h2" style="font-size:16px;margin-bottom:16px">O que você deseja fazer?</h2>
+        <label class="radio"><input type="radio" name="tipo" checked><span style="flex:1">Trocar o produto</span><span
+            class="mx" data-icon="refresh"></span><span class="dx fm-ri" data-icon="swap"></span></label>
+        <label class="radio"><input type="radio" name="tipo"><span style="flex:1">Devolver e receber
+            reembolso</span><span data-icon="refresh"></span></label>
+      </div>
+      <div class="card">
+        <h2 class="fm-h2 fm-h3" style="font-size:16px;margin-bottom:16px">Motivo da solicitação</h2>
+        <select class="field">
+          <option>O tamanho não serviu</option>
+          <option>Produto com defeito</option>
+          <option>Produto diferente do anunciado</option>
+          <option>Outro motivo</option>
+        </select>
+        <p class="label" style="margin:18px 0 8px;text-transform:uppercase">Conte mais detalhes (opcional)</p>
+        <textarea class="field" placeholder="Ex: A calça ficou muito justa na cintura..."></textarea>
+      </div>
+      <div class="btn-stack fm-btns"><button class="btn" type="submit"
+          style="text-transform:none;letter-spacing:0;font-size:16px">Enviar solicitação</button><a class="btn outline"
+          href="perfil.html" style="text-transform:none;letter-spacing:0;font-size:16px;color:var(--muted)">Cancelar</a>
+      </div>
+    </form>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
