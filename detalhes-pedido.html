@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes do pedido – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-order white">
+    <div data-include="topbar" data-desk></div>
+    <p class="breadcrumb d-crumb"><a href="meus-pedidos.html">Meus Pedidos</a> / <b>Detalhes do Pedido</b></p>
+    <section class="page" style="padding-top:26px">
+      <h1 class="title" style="text-transform:none;font-size:36px">Detalhes do pedido</h1>
+      <p class="muted" style="margin:8px 0 24px;padding-bottom:22px;border-bottom:1px solid var(--line)">Pedido
+        #SUB-1024 • 15/10/2023</p>
+      <div class="card">
+        <div class="status-head" style="align-items:flex-start;margin-bottom:6px">
+          <h2 style="font-size:20px;line-height:1.3;max-width:60%">Seu pedido está a caminho.</h2><span
+            class="status enviado">Enviado</span>
+        </div>
+        <p class="muted" style="margin-bottom:22px">Previsão de entrega: 20/10/2023</p>
+        <ul class="timeline">
+          <li class="done"><span class="node">✓</span><b>Pedido realizado</b></li>
+          <li class="done"><span class="node">✓</span><b>Pagamento confirmado</b></li>
+          <li class="done"><span class="node">✓</span><b>Pedido em preparação</b></li>
+          <li class="current"><span class="node"></span><b>Pedido enviado</b></li>
+          <li class="todo"><span class="node"></span><b>Pedido entregue</b></li>
+        </ul>
+        <a class="btn outline d-track" href="#">Acompanhar entrega</a>
+      </div>
+      <div class="card">
+        <p class="label" style="color:var(--text);margin-bottom:14px">Rastreamento</p><a class="btn outline" href="#"
+          style="height:48px;font-size:12px">Acompanhar entrega</a>
+      </div>
+      <div class="card">
+        <p class="label d-info-title">Informações de entrega</p>
+        <div class="d-carrier">
+          <div><span class="label">Transportadora</span><b>Loggi</b></div>
+          <div><span class="label">Código de rastreio</span><b>BR123456789SL <button type="button" class="copy-code"
+                onclick="try{navigator.clipboard.writeText('BR123456789SL')}catch(e){};this.textContent='Copiado'">Copiar</button></b>
+          </div>
+        </div>
+        <p class="label" style="color:var(--text);margin-bottom:14px">Endereço de entrega</p>
+        <p class="muted" style="line-height:1.7"><span class="nm">Lucas Ferreira</span><br>Rua das Palmeiras,
+          452<br>Vila Mariana, São Paulo - SP<br>04012-001</p>
+      </div>
+      <div class="card">
+        <p class="label" style="color:var(--text);margin-bottom:6px">Itens do pedido</p>
+        <div class="order-item">
+          <div class="thumb" style="width:80px"><img src="img/camiseta-essential-black.jpg" alt="" loading="lazy"></div>
+          <div><b>Camiseta Oversized Essential</b><br><span class="label" style="font-size:10px">Urban
+              Supply</span><br><small class="muted"><span class="mx">G · Preto</span><span class="dx">Tamanho: <b>G</b>
+                • Cor: <b>Preto</b></span></small>
+            <div class="sum-line"><small class="muted"><span class="mx">Qtd: 1</span><span class="dx">Quantidade:
+                  <b>1</b></span></small><b>R$ 129,90</b></div>
+          </div>
+        </div>
+        <div class="order-item">
+          <div class="thumb" style="width:80px"><img src="img/moletom-core-white.jpg" alt="" loading="lazy"></div>
+          <div><b>Hoodie Core White</b><br><span class="label" style="font-size:10px">Urban Supply</span><br><small
+              class="muted"><span class="mx">M · Branco</span><span class="dx">Tamanho: <b>M</b> • Cor:
+                <b>Branco</b></span></small>
+            <div class="sum-line"><small class="muted"><span class="mx">Qtd: 1</span><span class="dx">Quantidade:
+                  <b>1</b></span></small><b>R$ 109,90</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="padding:24px">
+        <h2 style="font-size:19px;font-weight:900">Resumo dos valores</h2>
+        <div class="sum-row"><span class="muted" style="font-weight:500">Subtotal (2 itens)</span><span>R$ 239,80</span>
+        </div>
+        <div class="sum-row"><span class="muted" style="font-weight:500">Frete</span><span class="green">Grátis</span>
+        </div>
+        <div class="sum-row total"><span>Total<br><small class="label" style="font-size:10px">Cartão de crédito
+              (1x)</small></span><strong>R$ 239,80</strong></div>
+      </div>
+      <p class="center" style="font-weight:800;margin:36px 0 16px">Precisa de ajuda com seu pedido?</p>
+      <a class="btn" href="central-ajuda.html">Falar com suporte</a>
+      <p class="center mt"><a class="link muted" href="meus-pedidos.html">← Cancelar pedido</a></p>
+      <a class="btn d-back-store" href="produtos.html">Voltar para a loja</a>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div data-include="tabbar" data-active="user"></div>
+  </main>
+</body>
+
+</html>

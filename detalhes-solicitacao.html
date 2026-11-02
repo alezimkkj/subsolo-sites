@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes da solicitação – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref desk-hlp fv-c desk-sol">
+    <div data-include="topbar" data-desk-only data-ann data-nav="ajuda"></div>
+    <header class="pagehead mx" style="padding-bottom:12px"><a href="central-ajuda.html" data-icon="back"></a>
+      <h1>Detalhes da solicitação</h1>
+    </header>
+    <section class="page">
+      <div class="mx">
+        <div class="card">
+          <div class="sum-line"><span class="label">Protocolo</span><span class="label">Data</span></div>
+          <div class="sum-line"><b style="font-size:22px;font-weight:900">#TR-98765</b><span>15/10/2023</span></div>
+        </div>
+        <div class="card">
+          <div class="status-head">
+            <h2>Status atual</h2><span class="status-pill">Em análise</span>
+          </div>
+          <ul class="timeline">
+            <li class="done"><span class="node">✓</span><b>Solicitação enviada</b><small>15/10/2023 às 14:30</small>
+            </li>
+            <li class="current"><span class="node"></span><b>Em análise</b><small>Estamos verificando seu pedido</small>
+            </li>
+            <li class="todo"><span class="node"></span><b>Aprovada</b><small>Aguardando processamento</small></li>
+            <li class="todo"><span class="node"></span><b>Concluída</b></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 style="font-size:17px;font-weight:800;margin-bottom:16px">Item da solicitação</h2>
+          <div class="prod-mini" style="padding-bottom:18px;border-bottom:1px solid var(--line)">
+            <div class="thumb"><img src="img/calca-shadow-black.jpg" alt="" loading="lazy"></div>
+            <div><span class="label" style="font-size:10px">PACE</span>
+              <h3>Calça Shadow Cargo Tech</h3><span class="tagchip">Tam: M</span><span class="tagchip">Cor: Black</span>
+            </div>
+          </div>
+          <div class="kv" style="margin-top:12px"><span>Tipo de solicitação</span><b>Troca</b></div>
+          <div class="kv"><span>Motivo</span><b>O tamanho não serviu</b></div>
+        </div>
+        <div class="card next-steps">
+          <h3>Próximos passos</h3>
+          <p>Nossa equipe está analisando sua solicitação. Você receberá uma notificação por e-mail e através do app
+            assim que a análise for concluída, o que geralmente ocorre em até 2 dias úteis.</p>
+        </div>
+        <a class="btn outline" href="central-ajuda.html"
+          style="text-transform:none;letter-spacing:0;font-size:16px;border-radius:16px;height:52px">Precisa de ajuda
+          com esta troca?</a>
+      </div>
+      <div class="sol-d dxb">
+        <a class="sol-back" href="trocas-pedidos.html"><span class="sb-ic" data-icon="back"></span>Voltar para
+          solicitações</a>
+        <article class="sol-card">
+          <header class="sol-top">
+            <h1>Detalhes da solicitação</h1>
+            <div class="sol-status"><span class="status-pill">Em análise</span><small>Status atual</small></div>
+          </header>
+          <div class="sol-meta">
+            <div><span class="label">Protocolo</span><b>#TR-98765</b></div>
+            <div><span class="label">Data</span><span class="sm-d">15/10/2023</span></div>
+          </div>
+          <div class="sol-cols">
+            <div class="sol-left">
+              <h2>Acompanhamento</h2>
+              <ul class="timeline">
+                <li class="done"><span class="node"></span><b>Solicitação enviada</b><small>15/10/2023 às 14:30</small>
+                </li>
+                <li class="current"><span class="node"></span><b>Em análise</b><small>Estamos verificando seu
+                    pedido</small></li>
+                <li class="todo"><span class="node"></span><b>Aprovada</b><small>Aguardando processamento</small></li>
+                <li class="todo"><span class="node"></span><b>Concluída</b></li>
+              </ul>
+              <div class="next-steps">
+                <h3>Próximos passos</h3>
+                <p>Nossa equipe está analisando sua solicitação. Você receberá uma notificação por e-mail e através do
+                  app assim que a análise for concluída, o que geralmente ocorre em até 2 dias úteis.</p>
+              </div>
+            </div>
+            <div class="sol-right">
+              <div class="sol-item">
+                <h3>Item da solicitação</h3>
+                <div class="prod-mini">
+                  <div class="thumb"><img src="img/calca-shadow-3.jpg" alt="" loading="lazy"></div>
+                  <div><span class="label">PACE</span>
+                    <h4>Calça Shadow Cargo Tech</h4><span class="tagchip">Tam: M</span><span class="tagchip">Cor:
+                      Black</span>
+                  </div>
+                </div>
+                <div class="kv"><span>Tipo de solicitação</span><b>Troca</b></div>
+                <div class="kv"><span>Motivo</span><b>O tamanho não serviu</b></div>
+              </div>
+              <a class="sol-help" href="central-ajuda.html">Precisa de ajuda com esta troca?</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
