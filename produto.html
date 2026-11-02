@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-pdp white">
+    <div data-include="topbar" data-desk data-noann></div>
+    <p class="breadcrumb">HOME / MARCAS / <b data-p-brand-crumb>PRODUTO</b></p>
+    <div class="pdp">
+      <div class="gallery">
+        <div class="thumb"><img src="img/calca-shadow-1.jpg" alt="" data-main><span class="heart" role="button"
+            data-icon="heart"></span></div>
+        <div class="thumbs" data-single data-p-thumbs></div>
+      </div>
+      <section class="page" style="padding-top:24px">
+        <p class="label" data-p-brand></p>
+        <h1 class="title" style="font-size:26px;margin-top:8px;line-height:1.1" data-p-name></h1>
+        <p class="price" style="font-size:22px" data-p-price></p>
+
+        <p class="label mt" data-p-color-label></p>
+        <div class="swatches" data-single data-p-swatches></div>
+
+        <div style="display:flex;justify-content:space-between">
+          <p class="label">Tamanho</p><a class="link muted" href="#" style="font-size:12px">Guia de Tamanhos</a>
+        </div>
+        <div class="sizes" data-single data-p-sizes></div>
+
+        <button class="btn" style="text-transform:none;letter-spacing:0;font-size:16px" data-add-cart>Adicionar ao
+          Carrinho</button>
+
+        <p class="label mt" style="margin-top:32px">Calcular frete e prazo</p>
+        <div class="frete"><input class="field" placeholder="00000-000" inputmode="numeric" maxlength="9"><button
+            class="btn">OK</button></div>
+
+        <div class="acc open"><button class="acc-head">Descrição <span class="sign"></span></button>
+          <div class="acc-body" data-p-desc></div>
+        </div>
+        <div class="acc"><button class="acc-head">Materiais e cuidados <span class="sign"></span></button>
+          <div class="acc-body" data-p-mat></div>
+        </div>
+        <div class="acc"><button class="acc-head">Medidas da peça <span class="sign"></span></button>
+          <div class="acc-body">Consulte o Guia de Tamanhos para ver as medidas de cada numeração.</div>
+        </div>
+      </section>
+    </div>
+
+    <section class="page reviews-sec">
+      <div class="rev-head">
+        <div class="rev-title">
+          <h2>Reviews <span class="stars mx">★ 4.7</span></h2>
+          <div class="rev-meta"><span class="stars rev-score dx">★ 4.7</span><span class="muted">128 reviews</span>
+          </div>
+        </div><button class="btn dx" data-open="reviews-sheet">Ver mais</button>
+      </div>
+      <div class="rev-grid">
+        <div class="review">
+          <div class="av dx">MT</div>
+          <header><span>Marcus Thorne</span><span><i class="mx">2 days ago</i><i class="dx">Há 2 dias</i></span>
+          </header><span class="stars">★★★★★</span>
+          <p style="margin-top:6px">O amortecimento é incrível. Tenho usado nos tênis nas minhas corridas diárias de 5
+            km e o retorno de energia é perceptível. A melhor compra deste ano!</p>
+        </div>
+        <div class="review">
+          <div class="av dx">ER</div>
+          <header><span>Elena Rodriguez</span><span><i class="mx">1 week ago</i><i class="dx">Há 1 semana</i></span>
+          </header><span class="stars">★★★★☆</span>
+          <p style="margin-top:6px">Adorei o visual! A forma é um pouco estreita, então talvez valha a pena escolher
+            meio número a mais se você tiver pés mais largos. No geral, estou muito satisfeito(a).</p>
+        </div>
+      </div>
+      <button class="btn more-btn mx" data-open="reviews-sheet">Ver mais</button>
+      <a class="btn rate-btn dx" href="avaliar-produto.html">Avaliar Produto</a>
+    </section>
+
+    <section class="related">
+      <div class="sec-title"><span>Quem viu, <br class="mx">também gostou</span><a href="produtos.html">VER TUDO</a>
+      </div>
+      <div class="scroll-x" data-p-related></div>
+    </section>
+    <div data-include="newsletter" data-email></div>
+    <div data-include="footer"></div>
+    <div data-include="tabbar" data-active="home"></div>
+
+
+    <div class="overlay sheet" id="reviews-sheet">
+      <div class="modal">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h2 style="font-size:20px">Avaliações</h2><button class="back" data-close data-icon="close"></button>
+        </div>
+        <div class="rating">
+          <div><big>4,7</big>
+            <p class="stars" style="margin-top:8px">★★★★★</p>
+            <p class="muted" style="font-size:12px">32 avaliações</p>
+          </div>
+          <div class="bars">
+            <div class="bar">5<div><i style="--w:80%"></i></div>24</div>
+            <div class="bar">4<div><i style="--w:20%"></i></div>6</div>
+            <div class="bar">3<div><i style="--w:7%"></i></div>2</div>
+            <div class="bar">2<div><i style="--w:0"></i></div>0</div>
+            <div class="bar">1<div><i style="--w:0"></i></div>0</div>
+          </div>
+        </div>
+        <a class="btn outline" href="avaliar-produto.html" style="text-transform:none;letter-spacing:0">Avaliar
+          produto</a>
+        <p class="label" style="margin:22px 0 4px">Comentários</p>
+        <div class="review">
+          <header><span>Carlos M.</span><span>15/05/2024</span></header><span class="stars">★★★★★</span>
+          <p style="margin-top:6px">Caimento perfeito e o material é de altíssima qualidade. Recomendo!</p>
+          <p class="label" style="margin-top:10px">■ Compra verificada</p>
+        </div>
+        <div class="review">
+          <header><span>Ana Clara</span><span>10/05/2024</span></header><span class="stars">★★★★★</span>
+          <p style="margin-top:6px">A calça é linda, só achei um pouco comprida, mas nada que um ajuste não resolva.</p>
+          <p class="label" style="margin-top:10px">■ Compra verificada</p>
+        </div>
+        <button class="btn" data-close>Ver mais avaliações</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

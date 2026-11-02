@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-list">
+    <div data-include="topbar" data-desk></div>
+    <p class="breadcrumb">Início — Roupas — <b data-l-crumb>Camisetas</b></p>
+    <section class="page">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <h1 class="title" style="font-size:36px" data-l-title>Camisetas</h1><span class="muted" data-l-count></span>
+      </div>
+      <div class="plist">
+        <aside class="dfilters">
+          <h2>Filtrar por:</h2>
+          <div class="fblock">
+            <h3>Categorias</h3>
+            <div class="fcats" data-single><button type="button">Oversized</button><button type="button" class="on">Boxy
+                Fit</button><button type="button">Graphic Tees</button><button type="button">Basic</button></div>
+          </div>
+          <div class="fblock">
+            <h3>Preço</h3>
+            <div class="range" data-range><span class="rtrack"></span><input type="range" min="50" max="500" step="10"
+                value="50" data-pmin aria-label="Preço mínimo"><input type="range" min="50" max="500" step="10"
+                value="500" data-pmax aria-label="Preço máximo"></div>
+            <div class="rlabels"><span data-pmin-label>R$ 50</span><span data-pmax-label>R$ 500</span></div>
+          </div>
+          <div class="fblock">
+            <h3>Cor</h3>
+            <div class="fcolors" data-single>
+              <div class="swatch on" style="background:#0a0a0a"></div>
+              <div class="swatch" style="background:#fff"></div>
+              <div class="swatch" style="background:#8f8f8f"></div>
+              <div class="swatch" style="background:#ecebe9"></div>
+              <div class="swatch" style="background:#5a5a5a"></div>
+            </div>
+          </div>
+          <div class="fblock">
+            <h3>Tamanho</h3>
+            <div class="fsizes" data-single><button type="button">P</button><button type="button"
+                class="on">M</button><button type="button">G</button><button type="button">GG</button></div>
+          </div>
+          <button type="button" class="btn" data-apply-filters>Aplicar filtros</button>
+        </aside>
+        <div class="pmain">
+          <div class="toolbar">
+            <button class="btn m-only"><span data-icon="filter"></span>Filtrar</button>
+            <span class="sort-label dx">Ordenar por:</span>
+            <label class="select"><select data-l-sort>
+                <option value="">Mais recentes</option>
+                <option value="asc">Menor preço</option>
+                <option value="desc">Maior preço</option>
+              </select></label>
+          </div>
+          <div class="grid2" data-l-grid></div>
+          <nav class="dpager" data-l-pager hidden></nav>
+        </div>
+      </div>
+    </section>
+    <div data-include="newsletter" data-desk-text></div>
+    <div data-include="footer"></div>
+    <div data-include="tabbar" data-active="home"></div>
+  </main>
+</body>
+
+</html>
