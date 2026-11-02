@@ -10786,3 +10786,90 @@ svg.if {
   font-size: 13px;
   white-space: nowrap;
 }
+/* Telas intermediárias (tablet): usa a largura toda em vez de ficar em coluna de 430px */
+@media (min-width: 431px) and (max-width: 899px) {
+  .app {
+    max-width: none;
+  }
+
+  .tabbar {
+    max-width: 520px;
+  }
+
+  .sheet .modal {
+    max-width: 560px;
+  }
+}
+
+/* Desktop compacto (900–1099px): evita o estouro horizontal do cabeçalho e do conteúdo */
+@media (min-width: 900px) and (max-width: 1099px) {
+  .desk .dheader {
+    padding: 0 32px;
+  }
+
+  .dheader .logo {
+    width: auto;
+    margin-right: 28px;
+  }
+
+  .dnav {
+    gap: 20px;
+  }
+
+  .dsearch {
+    min-width: 0;
+    margin-left: 24px;
+  }
+
+  .dicons {
+    gap: 20px;
+    margin-left: 24px;
+  }
+
+  .desk-home .stack,
+  .desk-home .statement,
+  .desk-home .editorial,
+  .desk-list .pmain {
+    min-width: 0;
+  }
+
+  .desk-home .statement,
+  .desk-home .editorial {
+    padding: 32px;
+  }
+
+  .desk-home .editorial {
+    flex-wrap: wrap;
+  }
+
+  .desk-list .plist {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .desk-list .dfilters {
+    padding: 0 32px 0 24px;
+  }
+
+  .desk-list .toolbar .select {
+    flex: 0 1 487px;
+    min-width: 0;
+  }
+
+  .desk .footer,
+  .desk .footer .cols {
+    column-gap: 24px;
+  }
+
+  .desk .footer .cols > div {
+    min-width: 0;
+  }
+
+  .desk .footer .promo .btn {
+    min-width: 0;
+  }
+
+  .fq-cta {
+    flex-wrap: wrap;
+    padding: 32px;
+  }
+}
