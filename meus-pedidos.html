@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus pedidos – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref fv-d desk-ordl">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <p class="ol-crumb"><a href="home.html">Home</a> / <b>Meus Pedidos</b></p>
+    <div class="ol-head">
+      <header class="appbar"><a class="back" href="perfil.html" data-icon="back"
+          style="background:var(--card);border:1px solid var(--line)"></a>
+        <h1 style="text-transform:none;font-size:22px">Meus pedidos</h1><a class="icon" href="carrinho.html"
+          data-icon="cart"></a>
+      </header>
+      <div class="chips-scroll" style="padding-top:20px"><button class="chip on"
+          data-filter-status="todos">Todos</button><button class="chip" data-filter-status="enviado">Em
+          andamento</button><button class="chip" data-filter-status="entregue">Entregues</button></div>
+    </div>
+    <section class="page">
+      <div class="card order" data-status="enviado">
+        <div class="top">
+          <div><span class="label">Pedido #SUB-1024</span><small>15 de Outubro, 2023</small></div><span
+            class="status enviado">Enviado</span>
+        </div>
+        <div class="body">
+          <div class="thumb"><img src="img/camiseta-essential-black.jpg" alt="" loading="lazy"></div>
+          <div>
+            <h3>Camiseta Oversized Essential</h3>
+            <p class="brand">URBAN SUPPLY</p><small>Qtd: 1 • Tamanho G</small>
+            <p class="price" style="font-size:17px;margin-top:6px">R$ 239,80</p>
+          </div>
+        </div>
+        <div class="actions"><a class="btn" href="detalhes-pedido.html">Ver detalhes</a><a class="btn outline round"
+            href="detalhes-pedido.html" data-icon="right"></a></div>
+      </div>
+      <div class="card order" data-status="entregue">
+        <div class="top">
+          <div><span class="label">Pedido #SUB-0982</span><small>28 de Setembro, 2023</small></div><span
+            class="status entregue">Entregue</span>
+        </div>
+        <div class="body">
+          <div class="thumb"><img src="img/moletom-core-white.jpg" alt="" loading="lazy"></div>
+          <div>
+            <h3>Hoodie Core White</h3>
+            <p class="brand">URBAN SUPPLY</p><small>Qtd: 1 • Tamanho M</small>
+            <p class="price" style="font-size:17px;margin-top:6px">R$ 459,90</p>
+          </div>
+        </div>
+        <div class="actions"><a class="btn outline" href="detalhes-pedido.html">Ver detalhes</a><a
+            class="btn outline sm" href="avaliar-produto.html"
+            style="text-transform:none;letter-spacing:0;flex:none">Avaliar</a></div>
+      </div>
+      <div class="card order cancelled" data-status="cancelado">
+        <div class="top">
+          <div><span class="label">Pedido #SUB-0912</span><small>12 de Agosto, 2023</small></div><span
+            class="status cancelado">Cancelado</span>
+        </div>
+        <div class="body">
+          <div class="thumb"><img src="img/calca-shadow-black.jpg" alt="" loading="lazy"></div>
+          <div>
+            <h3>Cargo Pants Shadow Black</h3>
+            <p class="brand">URBAN SUPPLY</p><small>Qtd: 1 • Tamanho 42</small>
+            <p class="price" style="font-size:17px;margin-top:6px">R$ 389,90</p>
+          </div>
+        </div>
+        <div class="actions"><a class="btn outline" href="detalhes-pedido.html">Ver detalhes</a></div>
+      </div>
+    </section>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
