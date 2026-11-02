@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Entrega – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-co white">
+    <div data-include="topbar" data-desk></div>
+    <div class="stepper">
+      <div class="st active"><i>1</i>Entrega</div><span class="ln "></span>
+      <div class="st "><i>2</i>Pagamento</div><span class="ln "></span>
+      <div class="st "><i>3</i>Revisão</div>
+    </div>
+    <section class="page" style="padding-top:26px">
+      <div class="co-main">
+        <h1 class="title" style="text-transform:none;font-size:38px">Entrega</h1>
+        <p class="muted" style="margin-top:6px">Onde você quer receber seu pedido?</p>
+        <p class="sub-title">Endereço salvo</p>
+        <div class="addr-pick"><span class="check" data-icon="check"></span>
+          <h3>Lucas Ferreira</h3>
+          <p>Rua das Palmeiras, 452<br>Vila Mariana, São Paulo - SP<br>04012-001</p><a href="enderecos.html">Alterar
+            endereço</a>
+        </div>
+        <a class="dashed slim" href="adicionar-endereco.html"><span data-icon="plus"></span>Adicionar novo endereço</a>
+        <p class="sub-title">Opções de envio</p>
+        <label class="radio ship"><input type="radio" name="envio" data-ship data-ship-std checked><span
+            style="flex:1"><b>Entrega Padrão</b><small>4-7 dias úteis</small></span><b data-ship-std-label></b></label>
+        <label class="radio ship"><input type="radio" name="envio" data-ship data-ship-exp><span
+            style="flex:1"><b>Entrega Expressa</b><small>1-2 dias úteis</small></span><b>R$ 25,90</b></label>
+      </div>
+      <aside class="co-aside">
+        <div class="card" style="padding:24px;margin-top:24px">
+          <h2 style="font-size:19px;font-weight:900">Resumo do Pedido</h2>
+          <div class="sum-items" data-sum-items></div>
+          <div class="sum-row"><span class="muted" style="font-weight:500" data-sub-label>Subtotal</span><span
+              data-subtotal></span></div>
+          <div class="sum-row"><span class="muted" style="font-weight:500">Frete</span><span data-frete></span></div>
+          <div class="sum-row total"><span>Total</span><strong data-total></strong></div>
+          <a class="btn sum-cta" href="checkout-pagamento.html">Continuar para pagamento<span
+              data-icon="right"></span></a>
+          <div class="sum-pays"><img class="gl" src="img/ic-visa.png" alt="Visa"><img class="gl"
+              src="img/ic-mastercard.png" alt="Mastercard"><img class="gl" src="img/ic-pix.png" alt="Pix"></div>
+        </div>
+        <p class="secure-note"><span data-icon="shield"></span><span>Compra 100% segura. Seus dados estão protegidos por
+            criptografia de ponta a ponta.</span></p>
+      </aside>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div class="checkout-bar"><a class="btn" href="checkout-pagamento.html">Continuar para pagamento →</a></div>
+  </main>
+</body>
+
+</html>

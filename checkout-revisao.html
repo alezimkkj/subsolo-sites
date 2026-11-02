@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Revisão – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-co white">
+    <div data-include="topbar" data-desk></div>
+    <div class="stepper">
+      <div class="st done"><i>✓</i>Entrega</div><span class="ln done"></span>
+      <div class="st done"><i>✓</i>Pagamento</div><span class="ln done"></span>
+      <div class="st active"><i>3</i>Revisão</div>
+    </div>
+    <section class="page" style="padding-top:26px">
+      <div class="co-main">
+        <h1 class="title" style="text-transform:none;font-size:38px">Revise seu pedido</h1>
+        <p class="muted" style="margin:6px 0 24px">Confira os detalhes antes de finalizar a compra.</p>
+        <p class="sub-title rv-label">Itens do pedido</p>
+        <div data-review-items></div>
+        <div class="co-two">
+          <div class="card" style="margin-top:24px">
+            <div class="summary-mini"><b>Entrega</b><a href="checkout-entrega.html">Alterar</a></div>
+            <p class="muted" style="line-height:1.7"><span class="nm">Lucas Ferreira</span><br>Rua das Palmeiras,
+              452<br>Vila Mariana, São Paulo - SP<br>04012-001</p>
+            <hr style="border:0;border-top:1px solid var(--line);margin:14px 0"><b style="font-size:13px"
+              data-ship-name>Entrega Padrão</b><br><small class="muted" data-ship-eta>Previsão: 4 a 7 dias úteis</small>
+          </div>
+          <div class="card">
+            <div class="summary-mini"><b>Pagamento</b><a href="checkout-pagamento.html">Alterar</a></div>
+            <p class="muted" style="line-height:1.7"><span data-pay-title>Cartão de crédito</span><br><span
+                class="pm-line" data-pay-line></span></p><img class="gl pay-mc" data-pay-mc src="img/ic-mastercard.png"
+              alt="Mastercard">
+          </div>
+        </div>
+      </div>
+      <aside class="co-aside">
+        <div class="card" style="padding:24px;margin-top:24px">
+          <h2 style="font-size:19px;font-weight:900">Resumo do Pedido</h2>
+          <div class="sum-row"><span class="muted" style="font-weight:500" data-sub-label>Subtotal</span><span
+              data-subtotal></span></div>
+          <div class="sum-row"><span class="muted" style="font-weight:500">Frete</span><span data-frete></span></div>
+          <div class="sum-row total"><span>Total</span><strong data-total></strong></div>
+          <a class="btn sum-cta" href="pagamento-confirmado.html">Finalizar pedido<span data-icon="right"></span></a>
+          <div class="sum-pays"><img class="gl" src="img/ic-visa.png" alt="Visa"><img class="gl"
+              src="img/ic-mastercard.png" alt="Mastercard"><img class="gl" src="img/ic-pix.png" alt="Pix"></div>
+        </div>
+        <p class="secure-note"><span data-icon="shield"></span><span>Compra 100% segura. Seus dados estão protegidos por
+            criptografia de ponta a ponta.</span></p>
+      </aside>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div class="checkout-bar"><a class="btn" href="pagamento-confirmado.html">Finalizar pedido →</a></div>
+  </main>
+</body>
+
+</html>

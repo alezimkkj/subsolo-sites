@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Pagamento – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-co white">
+    <div data-include="topbar" data-desk></div>
+    <div class="stepper">
+      <div class="st done"><i>✓</i>Entrega</div><span class="ln done"></span>
+      <div class="st active"><i>2</i>Pagamento</div><span class="ln "></span>
+      <div class="st "><i>3</i>Revisão</div>
+    </div>
+    <section class="page" style="padding-top:26px">
+      <div class="co-main">
+        <h1 class="title" style="text-transform:none;font-size:38px">Pagamento</h1>
+        <p class="muted" style="margin-top:6px">Escolha como deseja pagar.</p>
+        <div class="pay-tabs"><label class="radio"><input type="radio" name="pay" value="credit" data-pay
+              checked>Crédito<span class="pay-ic"><img class="gl" src="img/ic-visa.png" alt="Visa"><img class="gl"
+                src="img/ic-mastercard.png" alt="Mastercard"></span></label><label class="radio"><input type="radio"
+              name="pay" value="debit" data-pay>Débito</label><label class="radio"><input type="radio" name="pay"
+              value="pix" data-pay>Pix<span class="pay-ic" style="margin-left:0"><img class="gl" src="img/ic-pix.png"
+                alt=""></span></label></div>
+        <div data-pay-card>
+          <div class="group"><label class="label" for="num" style="color:var(--text)">Número do cartão</label><input
+              class="field" id="num" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000"></div>
+          <div class="group"><label class="label" for="nm" style="color:var(--text)">Nome impresso no
+              cartão</label><input class="field" id="nm" placeholder="Como no cartão"></div>
+          <div class="cols2">
+            <div class="group"><label class="label" for="val" style="color:var(--text)">Validade</label><input
+                class="field" id="val" maxlength="5" placeholder="MM/AA"></div>
+            <div class="group"><label class="label" for="cvv" style="color:var(--text)">CVV</label><input class="field"
+                id="cvv" maxlength="4" inputmode="numeric" placeholder="000"></div>
+          </div>
+          <div class="group" data-par-group><label class="label" for="par"
+              style="color:var(--text)">Parcelamento</label><select class="field" id="par" data-par
+              style="background:var(--card)"></select></div>
+          <p class="muted" data-debit-note hidden style="line-height:1.5">Débito: o valor total é cobrado à vista,
+            direto da sua conta.</p>
+        </div>
+        <p class="card muted" data-pay-pix hidden style="line-height:1.5">O QR Code Pix será gerado ao finalizar o
+          pedido.</p>
+        <div class="card" style="margin-top:14px">
+          <div class="summary-mini"><b>Entrega para Lucas Ferreira</b><a href="checkout-entrega.html">Alterar</a></div>
+          <p class="muted" style="line-height:1.7">Rua das Palmeiras, 452<br>Vila Mariana, São Paulo - SP<br>04012-001
+          </p>
+        </div>
+      </div>
+      <aside class="co-aside">
+        <div class="card" style="padding:24px;margin-top:24px">
+          <h2 style="font-size:19px;font-weight:900">Resumo do Pedido</h2>
+          <div class="sum-items" data-sum-items></div>
+          <div class="sum-row"><span class="muted" style="font-weight:500" data-sub-label>Subtotal</span><span
+              data-subtotal></span></div>
+          <div class="sum-row"><span class="muted" style="font-weight:500">Frete</span><span data-frete></span></div>
+          <div class="sum-row total"><span>Total</span><strong data-total></strong></div>
+          <a class="btn sum-cta" href="checkout-revisao.html">Continuar para revisão<span data-icon="right"></span></a>
+          <div class="sum-pays"><img class="gl" src="img/ic-visa.png" alt="Visa"><img class="gl"
+              src="img/ic-mastercard.png" alt="Mastercard"><img class="gl" src="img/ic-pix.png" alt="Pix"></div>
+        </div>
+        <p class="secure-note"><span data-icon="shield"></span><span>Compra 100% segura. Seus dados estão protegidos por
+            criptografia de ponta a ponta.</span></p>
+      </aside>
+      <a class="back-small" href="checkout-entrega.html">← Voltar para entrega</a>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div class="checkout-bar" style="margin-top:0"><a class="btn" href="checkout-revisao.html">Continuar para revisão
+        →</a></div>
+  </main>
+</body>
+
+</html>
