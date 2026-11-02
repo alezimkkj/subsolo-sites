@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrinho – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-cart white">
+    <div data-include="topbar" data-desk></div>
+    <p class="breadcrumb">HOME / <b>CARRINHO</b></p>
+    <section class="page">
+      <h1 class="title" style="font-size:34px;margin:6px 0 20px">Seu carrinho</h1>
+      <div data-cart-list></div>
+      <div class="card" data-cart-empty hidden style="text-align:center;padding:40px 24px">
+        <h2 style="font-size:20px;font-weight:900;text-transform:uppercase">Seu carrinho está vazio</h2>
+        <p class="muted" style="margin:10px 0 22px;line-height:1.5">Escolha um produto e ele aparece aqui.</p>
+        <a class="btn" href="produtos.html" style="text-transform:uppercase">Explorar produtos</a>
+      </div>
+
+      <div class="card" data-cart-summary hidden style="padding:24px">
+        <h2 style="font-size:20px;font-weight:900;text-transform:uppercase">Resumo do Pedido</h2>
+        <div class="sum-row"><span class="muted" style="font-weight:500">Subtotal</span><span data-cart-subtotal></span>
+        </div>
+        <div class="sum-row"><span class="muted" style="font-weight:500">Frete</span><span data-cart-frete></span></div>
+        <div class="sum-row total"><span>Total</span><strong data-cart-total></strong></div>
+        <p class="muted" data-free-hint hidden style="font-size:13px;margin:-4px 0 12px"></p>
+        <div class="coupon"><input class="field" placeholder="Cupom de desconto"><button class="btn sm">Aplicar</button>
+        </div>
+        <a class="btn" href="checkout-entrega.html" style="text-transform:uppercase">Finalizar compra</a>
+      </div>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div data-include="tabbar" data-active="home"></div>
+  </main>
+</body>
+
+</html>
