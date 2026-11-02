@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app auth-split">
+    <div class="auth-hero"><img src="img/logo.png" alt="Subsolo"></div>
+    <section class="page" style="padding-top:44px">
+      <div class="auth-form">
+        <p class="logo center"><img src="img/logo.png" alt="Subsolo"></p>
+        <div class="login-img" style="background:url(img/banner-cadastro.jpg) center 40%/cover no-repeat"></div>
+        <h1 class="heading">Encontra teu próximo estilo.</h1>
+        <p class="lead" style="font-size:17px;margin-bottom:28px">Crie sua conta para descobrir marcas, salvar favoritos
+          e acompanhar seus pedidos.</p>
+        <form data-signup novalidate>
+          <div class="group"><label class="label" for="nome">Nome completo</label><input class="field" id="nome"
+              name="nome" placeholder="Seu nome completo">
+            <p class="err"></p>
+          </div>
+          <div class="group"><label class="label" for="email">E-mail</label><input class="field" id="email" name="email"
+              type="email" placeholder="seu@email.com">
+            <p class="err"></p>
+          </div>
+          <div class="group"><label class="label" for="password">Senha</label>
+            <div class="pass"><input class="field" id="password" name="password" type="password"
+                placeholder="••••••••"><button type="button" data-show-password>Mostrar</button></div>
+            <p class="err"></p>
+            <p class="hint">Mínimo de 8 caracteres, incluindo letras e números.</p>
+          </div>
+          <label class="check-row"><input type="checkbox" name="terms"><span>Li e concordo com os <a href="#">Termos de
+                Uso</a> e a <a href="privacidade.html">Política de Privacidade</a>.</span></label>
+          <button class="btn" type="submit" style="text-transform:none;letter-spacing:0;font-size:17px">Criar conta
+            <span data-icon="arrow"></span></button>
+        </form>
+        <div class="divider">Ou acesse com</div>
+        <div class="social-login"><a class="btn outline" href="home.html"><svg class="brand-ic" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+            </svg>&nbsp;Google</a><a class="btn outline" href="home.html"><svg class="brand-ic" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" />
+            </svg>&nbsp;Apple</a></div>
+        <p class="center muted" style="margin:32px 0 20px;font-size:15px">Já tem uma conta? <a class="link"
+            href="login.html" style="color:var(--text)">Entrar</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
