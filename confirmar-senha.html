@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirme sua senha – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref desk-acc desk-cs fv-d">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <div class="acc-wrap">
+      <div data-include="accnav" data-active="info"></div>
+      <div class="acc-main">
+        <div class="acc-card">
+          <header class="pagehead"><a class="back" href="excluir-conta.html" data-icon="back"></a>
+            <h1 style="font-size:24px;font-weight:900">Confirme sua senha</h1>
+          </header>
+          <form data-next="exclusao-enviada.html">
+            <section class="page" style="border-top:1px solid var(--line);padding-top:24px">
+              <p class="muted" style="line-height:1.5;margin-bottom:28px">Para sua segurança, confirme sua senha para
+                prosseguir com a exclusão da conta.</p>
+              <p class="label cs-w" style="margin-bottom:10px">Senha atual</p>
+              <input class="field cs-w" type="password" placeholder="••••••••" required style="border-radius:18px">
+              <p class="muted cs-w cs-forgot" style="margin:18px 0 24px;font-size:14px"><a href="#">› Esqueceu sua
+                  senha?</a></p>
+              <div class="card note cs-w">
+                <p><span data-icon="user"></span>Sua identidade será validada antes que possamos processar o pedido de
+                  exclusão.</p>
+                <p><span data-icon="heart"></span>Após a confirmação, o processo de remoção de dados começará
+                  imediatamente.</p>
+              </div>
+            </section>
+            <div class="bottom-bar"><button class="btn" type="submit"
+                style="text-transform:none;letter-spacing:0;font-size:16px">Excluir minha conta</button><a
+                class="cs-cancel dx" href="excluir-conta.html">Cancelar e voltar</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
