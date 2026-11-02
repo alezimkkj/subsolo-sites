@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento confirmado – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-conf white">
+    <div data-include="topbar" data-desk></div>
+    <section class="page center">
+      <div class="okcircle" data-icon="check"></div>
+      <h1 class="title" style="text-transform:none;font-size:34px;line-height:1.05">Pagamento confirmado!</h1>
+      <p class="muted" style="margin:12px 0 28px;line-height:1.5">Seu pagamento foi aprovado. Agora vamos preparar seu
+        pedido.</p>
+
+      <div class="card" style="text-align:left">
+        <div class="sum-line"><span><span class="label">Pedido</span><br><b data-order-id>#12938</b></span><span
+            style="text-align:right"><span class="label">Data<span class="dx"> da compra</span></span><br><span
+              data-order-date>24/05/2024</span></span></div>
+        <hr style="border:0;border-top:1px solid var(--line);margin:10px 0">
+        <div class="sum-line"><span class="muted"><span class="mx">Pagamento</span><span class="dx">Método de
+              Pagamento</span></span><b data-order-pay>Cartão de crédito</b></div>
+        <div class="sum-line"><span class="muted"><span class="mx">Total</span><span class="dx">Valor
+              Total</span></span><strong style="font-size:26px;font-weight:900" data-order-total>R$ 0,00</strong></div>
+      </div>
+
+      <div class="card" style="text-align:left">
+        <p class="label" style="color:var(--text);margin-bottom:10px">E agora?</p>
+        <ul class="steps">
+          <li><span class="dot"></span><span>Pagamento confirmado<br><small class="green"
+                style="font-weight:500">Concluído</small></span></li>
+          <li><span class="dot"></span><span>Preparando pedido<small class="dx muted">Em andamento</small></span></li>
+          <li class="todo"><span class="dot"></span>Pedido enviado</li>
+          <li class="todo"><span class="dot"></span>Pedido entregue</li>
+        </ul>
+      </div>
+
+      <div class="card" style="text-align:left">
+        <p class="label" style="color:var(--text)">Itens do pedido</p>
+        <div data-order-items></div>
+      </div>
+
+      <p class="muted note-m" style="font-size:13px;line-height:1.5;margin:20px 0">Você receberá as atualizações do
+        pedido pelos canais disponíveis na sua conta.</p>
+      <a class="btn" href="detalhes-pedido.html">Acompanhar pedido →</a>
+      <p class="mt"><a class="link" href="produtos.html">← Continuar comprando</a></p>
+      <p class="muted note-d">Você receberá as atualizações do pedido pelos canais disponíveis na sua conta (E-mail e
+        WhatsApp).</p>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
