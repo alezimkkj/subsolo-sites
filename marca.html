@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Palm Angels – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-brand">
+    <div data-include="topbar" data-desk data-nav="marcas"></div>
+    <section class="brand-hero">
+      <div class="hero"></div>
+      <div class="brandlogo"><img src="img/marca-palm-angels.png" alt="Palm Angels"></div>
+      <div class="brand-info">
+        <h1>PALM ANGELS</h1><small><span class="mx">✔ </span>MARCA VERIFICADA</small>
+      </div>
+      <div class="page brand-intro">
+        <p class="lead">Streetwear autêntico nascido no coração de São Paulo. Explorando shapes oversized e cores
+          vibrantes para quem vive a cultura urbana.</p>
+        <button class="btn" data-feedback="✔ Seguindo" data-keep>+ Seguir marca</button>
+      </div>
+    </section>
+    <section class="page brand-products">
+      <h2 class="title mt" style="font-size:24px;margin-top:44px">Produtos da marca</h2>
+      <p class="muted">32 produtos encontrados</p>
+      <div class="toolbar">
+        <button class="btn"><span data-icon="filter"></span>Filtros</button>
+        <label class="select"><select>
+            <option>Ordenar por</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+          </select></label>
+      </div>
+      <div class="grid2">
+        <a class="product" href="produto.html?id=camiseta-palm-white">
+          <div class="thumb"><img src="img/camiseta-palm-white.jpg" alt="" loading="lazy"><span
+              class="tag">Novo</span><span class="heart" role="button" data-icon="heart"></span></div>
+          <p class="brand">PALM ANGELS</p>
+          <p class="name">Camiseta Boxy "Essential" White</p>
+          <p class="price">R$ 189,90</p>
+        </a>
+        <a class="product" href="produto.html?id=moletom-palm-black">
+          <div class="thumb"><img src="img/moletom-palm-black.jpg" alt="" loading="lazy"><span class="heart"
+              role="button" data-icon="heart"></span></div>
+          <p class="brand">PALM ANGELS</p>
+          <p class="name">Moletom Canguru "Logo" Black</p>
+          <p class="price">R$ 359,00</p>
+        </a>
+        <a class="product" href="produto.html?id=cargo-khaki">
+          <div class="thumb"><img src="img/cargo-khaki.jpg" alt="" loading="lazy"><span class="tag hot">Em
+              alta</span><span class="heart" role="button" data-icon="heart"></span></div>
+          <p class="brand">PALM ANGELS</p>
+          <p class="name">Calça Cargo "Utility" Khaki</p>
+          <p class="price">R$ 299,90</p>
+        </a>
+        <a class="product" href="produto.html?id=tenis-arch-white">
+          <div class="thumb"><img src="img/tenis-arch-white.jpg" alt="" loading="lazy"><span class="heart" role="button"
+              data-icon="heart"></span></div>
+          <p class="brand">PALM ANGELS</p>
+          <p class="name">Tênis Branco “Arch”</p>
+          <p class="price">R$ 149,90 <s>R$ 219,00</s></p>
+        </a>
+      </div>
+      <div class="pager"><a class="on" href="#">1</a><a href="#">2</a><a href="#">3</a></div>
+    </section>
+    <div data-include="newsletter" data-desk-email data-desk-text></div>
+    <div data-include="footer"></div>
+    <div data-include="tabbar" data-active="home"></div>
+  </main>
+</body>
+
+</html>
