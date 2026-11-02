@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-find white">
+    <div data-include="topbar" data-desk-only data-nav="none"></div>
+    <form class="search-head m-only" data-search><a href="home.html" data-icon="back"></a><label><span
+          data-icon="search"></span><input name="q" type="search" placeholder="Buscar produtos ou marcas"
+          autofocus></label></form>
+    <section class="page">
+      <div class="find-main">
+        <div class="sec-label"><span>Buscas recentes</span><button data-clear-recents>LIMPAR</button></div>
+        <div class="recent" data-term="Camiseta Oversized" style="cursor:pointer"><span>Camiseta Oversized</span><button
+            data-recent-remove aria-label="Remover">×</button></div>
+        <div class="recent" data-term="Calça Cargo" style="cursor:pointer"><span>Calça Cargo</span><button
+            data-recent-remove aria-label="Remover">×</button></div>
+        <div class="recent" data-term="Jaqueta neon" style="cursor:pointer"><span>Jaqueta neon</span><button
+            data-recent-remove aria-label="Remover">×</button></div>
+        <div class="sec-label" style="margin-top:36px"><span>Explore categorias</span></div>
+        <div class="chips" style="margin-top:14px"><a class="chip" style="background:var(--chip);border:0"
+            href="produtos.html">Camisetas</a><a class="chip" style="background:var(--chip);border:0"
+            href="produtos.html">Moletons</a><a class="chip" style="background:var(--chip);border:0"
+            href="produtos.html">Calças</a><a class="chip" style="background:var(--chip);border:0"
+            href="produtos.html">Tênis</a><a class="chip" style="background:var(--chip);border:0"
+            href="produtos.html">Acessórios</a></div>
+      </div>
+      <aside class="trends">
+        <div class="sec-label" style="margin-top:36px"><span>Em alta nas buscas</span></div>
+        <a class="trend" href="#" data-term="Oversized">
+          <div class="thumb"><img src="img/cat-camisetas-sq.jpg" alt="" loading="lazy"></div>
+          <div><b>Oversized</b><small>840 buscas hoje</small></div>
+        </a>
+        <a class="trend" href="#" data-term="Cargo">
+          <div class="thumb"><img src="img/cat-cargos-sq.jpg" alt="" loading="lazy"></div>
+          <div><b>Cargo</b><small>520 buscas hoje</small></div>
+        </a>
+        <a class="trend" href="#" data-term="Sneakers">
+          <div class="thumb"><img src="img/cat-tenis-sq.jpg" alt="" loading="lazy"></div>
+          <div><b>Sneakers</b><small>310 buscas hoje</small></div>
+        </a>
+        <a class="btn dxb" href="produtos.html">Ver todas as tendências</a>
+      </aside>
+    </section>
+    <div data-include="footer" data-desk-only></div>
+    <div data-include="tabbar" data-active="search"></div>
+  </main>
+</body>
+
+</html>
