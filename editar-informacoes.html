@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar informações pessoais – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-acc desk-edit">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <div class="acc-wrap">
+      <div data-include="accnav" data-active="info"></div>
+      <div class="acc-main acc-card">
+        <header class="appbar flat m-only"><a class="back" href="perfil.html" data-icon="back"></a>
+          <h1>Editar informações pessoais</h1><span style="width:36px"></span>
+        </header>
+        <form class="page" data-profile-form novalidate style="padding-top:34px">
+          <div class="ed-head">
+            <h1 class="ed-title">Informações pessoais</h1>
+            <div class="photo-box">
+              <div class="avatar" data-avatar><svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="9" r="4.2" />
+                  <path d="M3 24c0-6 4-9 9-9s9 3 9 9z" />
+                </svg><span class="cam" data-icon="camera" data-icon-f></span></div>
+              <label class="photo-link"><span class="mx">Alterar foto</span><b class="dx pl-t">Alterar foto de
+                  perfil</b><small class="dx pl-s">Tamanho máximo 2MB (JPG ou PNG)</small><input type="file"
+                  accept="image/*" data-photo-input></label>
+            </div>
+          </div>
+          <div class="group m-only"><label class="label" for="nome">Nome completo</label><input class="field" id="nome"
+              name="nome" value="Alessandro Silva Pereira"></div>
+          <div class="dxrow">
+            <div class="group"><label class="label" for="primeiro-nome">Nome</label><input class="field"
+                id="primeiro-nome" name="primeiro_nome" value="Alessandro"></div>
+            <div class="group"><label class="label" for="sobrenome">Sobrenome</label><input class="field" id="sobrenome"
+                name="sobrenome" value="Silva Pereira"></div>
+          </div>
+          <div class="group mail-group"><label class="label" for="mail">E-mail</label><input class="field" id="mail"
+              name="mail" type="email" value="alessandro.silva@email.com"><span class="verified">Verificado</span></div>
+          <div class="group m-only"><label class="label" for="telefone">Telefone</label><input class="field"
+              id="telefone" name="telefone" type="tel" value="(11) 98765-432">
+            <p class="err"></p>
+          </div>
+          <div class="dxrow">
+            <div class="group"><label class="label" for="celular">Celular</label><input class="field" id="celular"
+                name="celular" type="tel" value="(11) 98765-4321">
+              <p class="err"></p>
+            </div>
+            <div class="group"><label class="label" for="cpf">CPF</label><input class="field" id="cpf" name="cpf"
+                inputmode="numeric" value="123.456.789-00"></div>
+          </div>
+          <div class="dxrow">
+            <div class="group"><label class="label" for="nascimento">Data de nascimento</label><input class="field"
+                id="nascimento" name="nascimento" inputmode="numeric" value="15 / 04 / 1992"></div>
+            <div class="group"><label class="label" for="genero">Gênero</label><select class="field" id="genero"
+                name="genero">
+                <option selected>Masculino</option>
+                <option>Feminino</option>
+                <option>Não-binário</option>
+                <option>Prefiro não informar</option>
+              </select></div>
+          </div>
+          <div class="btn-stack" style="margin-top:34px"><button class="btn" type="submit"
+              style="text-transform:none;letter-spacing:0;font-size:16px">Salvar alterações</button><a class="btn"
+              href="perfil.html"
+              style="background:none;color:var(--muted);text-transform:none;letter-spacing:0;font-size:16px">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>

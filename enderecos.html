@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus endereços – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-acc desk-addrs">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <div class="acc-wrap">
+      <div data-include="accnav" data-active="addr"></div>
+      <div class="acc-main">
+        <header class="pagehead"><a class="back" href="perfil.html" data-icon="back"></a>
+          <h1 style="font-size:22px;font-weight:900;text-transform:uppercase">Meus endereços</h1><a class="btn add-d"
+            href="adicionar-endereco.html"><span data-icon="plus"></span>Adicionar endereço</a>
+        </header>
+        <section class="page">
+          <div data-addr-list>
+            <a class="btn m-only" href="adicionar-endereco.html" style="border-radius:16px;margin-bottom:20px"><span
+                data-icon="plus"></span>Adicionar endereço</a>
+            <div class="card addr">
+              <div class="tags"><b>Padrão</b><span>Residencial</span></div>
+              <h3>Lucas Silva</h3>
+              <p>Rua Augusta, 1234, Apt 52<br>Consolação, São Paulo - SP<br>CEP: 01305-100</p>
+              <div class="actions"><button><span data-icon="edit"></span>Editar</button><button class="del"
+                  data-open="delete-modal" data-target=".addr"><span data-icon="trash"></span>Excluir</button></div>
+            </div>
+            <div class="card addr">
+              <div class="tags"><span>Trabalho</span></div>
+              <h3>Lucas Silva</h3>
+              <p>Av. Paulista, 500<br>Bela Vista, São Paulo - SP<br>CEP: 01310-000</p>
+              <div class="actions"><button><span data-icon="edit"></span>Editar</button><button class="del"
+                  data-open="delete-modal" data-target=".addr"><span data-icon="trash"></span>Excluir</button></div><a
+                class="default-btn" href="#" data-default>Definir como padrão</a>
+            </div>
+            <div class="card addr">
+              <div class="tags"><span>Casa de verão</span></div>
+              <h3>Lucas Silva</h3>
+              <p>Al. das Baleias, 45<br>Ilhabela - SP<br>CEP: 11630-000</p>
+              <div class="actions"><button><span data-icon="edit"></span>Editar</button><button class="del"
+                  data-open="delete-modal" data-target=".addr"><span data-icon="trash"></span>Excluir</button></div><a
+                class="default-btn" href="#" data-default>Definir como padrão</a>
+            </div>
+          </div>
+          <div class="center" data-addr-empty hidden>
+            <div class="pin-ic"><span data-icon="pin"></span></div>
+            <h2 style="font-size:22px;font-weight:800;line-height:1.25">Você ainda não tem endereços salvos</h2>
+            <p class="muted" style="margin:12px 0 36px;line-height:1.5">Adicione um endereço para facilitar suas
+              próximas compras.</p>
+            <a class="btn" href="adicionar-endereco.html"><span data-icon="plus"></span>Adicionar endereço</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+    <div class="overlay" id="delete-modal">
+      <div class="modal">
+        <div class="round-ic"><span class="mx" data-icon="trash"></span><svg class="md-ic" viewBox="0 0 40 44"
+            aria-hidden="true">
+            <path fill="#b9b9bb" stroke="none" d="M20 43S5 30 5 18a15 15 0 0 1 30 0c0 12-15 25-15 25z" />
+            <path fill="#dc2626" stroke="none"
+              d="M15.5 8h9l1 2h5.2v2.2H9.3V10h5.2zM10.8 14h18.4l-1.4 16.2a2.2 2.2 0 0 1-2.2 2H14.4a2.2 2.2 0 0 1-2.2-2z" />
+            <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+              d="M16.2 17.5v10.5M20 17.5v10.5M23.8 17.5v10.5" />
+          </svg></div>
+        <h3><span class="mx">Excluir endereço?</span><span class="dx">Excluir endereço</span></h3>
+        <p><span class="mx">Tem certeza de que deseja excluir este endereço? Esta ação não poderá ser
+            desfeita.</span><span class="dx dline">Tem certeza que deseja excluir este endereço?</span><span
+            class="dx dline">Esta ação não poderá ser desfeita.</span></p>
+        <div class="btn-stack"><button class="btn" data-confirm-delete><span class="mx">Excluir endereço</span><span
+              class="dx">Sim, excluir</span></button><button class="btn outline" data-close><span
+              class="mx">Cancelar</span><span class="dx">Não, cancelar</span></button></div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
