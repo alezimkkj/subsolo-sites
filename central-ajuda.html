@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Central de ajuda – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-ref desk-hlp fv-a desk-hc">
+    <div data-include="topbar" data-desk-only data-ann data-nav="ajuda"></div>
+    <header class="pagehead" style="background:var(--card)"><a href="perfil.html" data-icon="back"></a>
+      <h1>Central de ajuda</h1>
+    </header>
+    <section class="page" style="padding-top:20px">
+      <label class="searchbar"
+        style="border-radius:16px;background:var(--card);padding:0 18px;height:52px;border:0"><span
+          data-icon="search"></span><input placeholder="Buscar uma dúvida" style="flex:1"></label>
+      <div class="help-card">
+        <h2>Precisa de ajuda com um pedido?</h2>
+        <p>Acompanhe o status, solicite troca ou veja detalhes das suas compras.</p><a class="btn"
+          href="meus-pedidos.html">Ver meus pedidos</a>
+      </div>
+      <div class="hc-cats">
+        <p class="label" style="margin-bottom:12px">Categorias</p>
+        <div class="list">
+          <a class="row" href="politicas-faq.html"><span class="ic" data-icon="box" data-icon-f></span><span
+              class="grow" style="font-weight:500">Pedidos e entrega</span><span data-icon="right"></span></a>
+          <a class="row" href="politicas-faq.html"><span class="ic" data-icon="card" data-icon-f></span><span
+              class="grow" style="font-weight:500">Pagamentos e reembolsos</span><span data-icon="right"></span></a>
+          <a class="row" href="trocas.html"><span class="ic" data-icon="refresh"></span><span class="grow"
+              style="font-weight:500">Trocas e devoluções</span><span data-icon="right"></span></a>
+          <a class="row" href="politicas-faq.html"><span class="ic" data-icon="shirt" data-icon-f></span><span
+              class="grow" style="font-weight:500">Produtos e tamanhos</span><span data-icon="right"></span></a>
+          <a class="row" href="politicas-faq.html"><span class="ic" data-icon="user" data-icon-f></span><span
+              class="grow" style="font-weight:500">Políticas e FAQ</span><span data-icon="right"></span></a>
+        </div>
+      </div>
+      <div class="hc-contact">
+        <p class="label" style="margin-bottom:12px">Entrar em contato</p>
+        <div class="list">
+          <a class="row" href="#"><span class="ic green" data-icon="chat"></span><span
+              class="grow">WhatsApp<small>Resposta em minutos</small></span><span data-icon="right"></span></a>
+          <a class="row" href="#"><span class="ic" data-icon="mail"></span><span class="grow">E-mail<small>Resposta em
+                até 24h</small></span><span data-icon="right"></span></a>
+          <div class="hours"><span data-icon="clock"></span>Segunda a Sexta, 09h às 18h</div>
+        </div>
+      </div>
+    </section>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>

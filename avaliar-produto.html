@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avaliar produto – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-rate white">
+    <div data-include="topbar" data-desk-only></div>
+    <header class="appbar flat m-only" style="border-bottom:1px solid var(--line)"><a class="back"
+        href="meus-pedidos.html" data-icon="back"></a>
+      <h1>Avaliar produto</h1><span style="width:36px"></span>
+    </header>
+    <div class="rate-top dx">
+      <nav class="crumbs"><a href="home.html">Home</a><span data-icon="right"></span><a href="meus-pedidos.html">Meus
+          Pedidos</a><span data-icon="right"></span><b>Avaliar Produto</b></nav>
+      <h1>Avaliar Produto</h1>
+    </div>
+    <form class="page rate-form" data-next="meus-pedidos.html" data-msg="Avaliação enviada. Obrigado!"
+      style="padding-top:20px">
+      <div class="card prod-mini">
+        <div class="thumb"><img src="img/calca-shadow-black.jpg" alt="" loading="lazy"></div>
+        <div><span class="label" style="font-size:10px">PACE</span>
+          <h3>Calça "Shadow" Cargo Tech - Black</h3><small>Tamanho: M, Cor: Preto</small>
+        </div>
+      </div>
+      <p class="center rate-title" style="font-weight:800;margin-top:30px">Sua nota</p>
+      <div class="rate-row">
+        <div class="stars-input" data-rating>
+          <button type="button" class="on" data-value="1" data-icon="star"></button><button type="button" class="on"
+            data-value="2" data-icon="star"></button><button type="button" class="on" data-value="3"
+            data-icon="star"></button><button type="button" class="on" data-value="4" data-icon="star"></button><button
+            type="button" data-value="5" data-icon="star"></button>
+        </div>
+        <p class="center muted rate-hint" style="font-size:13px;margin-bottom:30px">Toque para escolher uma nota</p>
+      </div>
+      <p class="label" style="color:var(--text);margin-bottom:12px">Seu comentário</p>
+      <textarea class="field f-text" placeholder="Conte como foi sua experiência com o produto."
+        style="background:var(--card);height:130px"></textarea>
+      <div style="display:flex;justify-content:space-between;margin:26px 0 12px">
+        <p class="label" style="color:var(--text)">Fotos do produto</p><span class="muted"
+          style="font-size:12px">(Opcional)</span>
+      </div>
+      <label class="dropzone"><span data-icon="camera"></span><span>Adicionar fotos</span><input type="file"
+          accept="image/*" multiple data-photos></label>
+      <div class="btn-stack" style="margin-top:32px"><button class="btn" type="submit"
+          style="text-transform:none;letter-spacing:0;font-size:16px">Enviar avaliação</button><a class="btn"
+          href="meus-pedidos.html"
+          style="background:none;color:var(--text);text-transform:none;letter-spacing:0;font-size:16px">Cancelar</a>
+      </div>
+    </form>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>

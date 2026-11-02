@@ -6,13 +6,12 @@ O layout foi pensado primeiro para celular e depois adaptado para telas de compu
 
 ## Acesse o projeto
 
-- Site publicado (GitHub Pages):
-- Repositório:
+- Site publicado (GitHub Pages): _adicione o link aqui_
+- Repositório: _adicione o link aqui_
 
 ## O que dá para fazer no site
 
 **Navegação e compra**
-
 - Ver a página inicial com banners, destaques e a lista de marcas
 - Navegar por categorias (camisetas, moletons, calças, cargos, bermudas, jaquetas, tênis e acessórios)
 - Filtrar por faixa de preço, ordenar do menor para o maior preço (ou o contrário) e paginar a lista no desktop
@@ -25,7 +24,6 @@ O layout foi pensado primeiro para celular e depois adaptado para telas de compu
 - Ver a confirmação do pedido com resumo, número e data
 
 **Conta e suporte**
-
 - Criar conta, entrar, confirmar e-mail e senha
 - Editar informações pessoais e foto de perfil
 - Cadastrar, editar, excluir e definir endereço padrão

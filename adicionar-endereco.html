@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adicionar endereço – Subsolo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="app desk desk-acc desk-addaddr">
+    <div data-include="topbar" data-desk-only data-ann data-nav="none"></div>
+    <div class="acc-wrap">
+      <div data-include="accnav" data-active="addr"></div>
+      <div class="acc-main">
+        <header class="pagehead"><a class="back" href="enderecos.html" data-icon="back"
+            style="background:var(--card);border:1px solid var(--line)"></a>
+          <h1 style="font-size:22px;font-weight:900;text-transform:uppercase">Adicionar endereço</h1>
+        </header>
+        <form class="page" data-next="enderecos.html" data-msg="Endereço salvo!">
+          <div class="group"><label class="label" for="destinatario">Nome do destinatário *</label><input class="field"
+              id="destinatario" name="destinatario" placeholder="Ex: Lucas Silva" required></div>
+          <div class="group"><label class="label" for="apelido">Nome do endereço (opcional)</label><input class="field"
+              id="apelido" name="apelido" placeholder="Ex: Casa, Trabalho"></div>
+          <div class="cols2 cep-row" style="align-items:end">
+            <div class="group"><label class="label" for="cep">CEP *</label><input class="field" id="cep" name="cep"
+                placeholder="00000-000" inputmode="numeric" maxlength="9" required></div>
+            <div class="group"><a class="link cep-help" href="#"
+                style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;display:block;margin-bottom:20px">Não
+                sei meu CEP</a></div>
+          </div>
+          <div class="group"><label class="label" for="rua">Rua *</label><input class="field" id="rua" name="rua"
+              placeholder="Rua, Avenida, Alameda..." required></div>
+          <div class="cols2">
+            <div class="group"><label class="label" for="numero">Número *</label><input class="field" id="numero"
+                name="numero" placeholder="123" required inputmode="numeric"></div>
+            <div class="group"><label class="label" for="complemento">Complemento</label><input class="field"
+                id="complemento" name="complemento" placeholder="Apt, Bloco..."></div>
+          </div>
+          <div class="group"><label class="label" for="bairro">Bairro *</label><input class="field" id="bairro"
+              name="bairro" placeholder="Nome do bairro" required></div>
+          <div class="cols-city">
+            <div class="group"><label class="label" for="cidade">Cidade *</label><input class="field" id="cidade"
+                name="cidade" placeholder="Sua cidade" required></div>
+            <div class="group"><label class="label" for="estado">Estado *</label><select class="field" id="estado"
+                name="estado" style="background:var(--card)" required>
+                <option value="">UF</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+              </select></div>
+          </div>
+          <label class="check-row"
+            style="align-items:center;color:var(--text);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:13px;margin-top:12px"><input
+              type="checkbox" name="padrao">Definir como endereço padrão</label>
+          <div class="btn-stack" style="margin-top:30px"><button class="btn" type="submit">Salvar endereço</button><a
+              class="btn" href="enderecos.html"
+              style="background:none;color:var(--muted);height:44px;font-size:12px">Cancelar</a></div>
+        </form>
+      </div>
+    </div>
+    <div data-include="tabbar" data-active="user"></div>
+    <div data-include="footer" data-desk-only></div>
+  </main>
+</body>
+
+</html>
